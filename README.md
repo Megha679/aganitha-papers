@@ -1,4 +1,4 @@
-\# Aganitha Papers
+&nbsp;Aganitha Papers
 
 
 
@@ -10,15 +10,15 @@ A command-line tool to fetch research papers from PubMed based on a query, filte
 
 
 
-\## 🚀 Features
+&nbsp;Features
 
 
 
-\- 🔍 Fetches research papers from \*\*PubMed\*\* using its API.
+&nbsp;Fetches research papers from \*\*PubMed\*\* using its API.
 
-\- 🎯 Identifies \*\*non-academic authors\*\* affiliated with \*\*pharma or biotech companies\*\*.
+\-  Identifies \*\*non-academic authors\*\* affiliated with \*\*pharma or biotech companies\*\*.
 
-\- 📦 Saves results to a \*\*CSV\*\* with the following columns:
+\-  Saves results to a \*\*CSV\*\* with the following columns:
 
 &nbsp; - PubmedID
 
@@ -32,9 +32,9 @@ A command-line tool to fetch research papers from PubMed based on a query, filte
 
 &nbsp; - Corresponding Author Email
 
-\- 💻 Command-line support with helpful flags.
+\-  Command-line support with helpful flags.
 
-\- 🛠️ Packaged with \*\*Poetry\*\* for clean dependency management and distribution.
+\-  Packaged with \*\*Poetry\*\* for clean dependency management and distribution.
 
 
 
@@ -42,7 +42,7 @@ A command-line tool to fetch research papers from PubMed based on a query, filte
 
 
 
-\## 🧱 Project Structure
+&nbsp;Project Structure
 
 
 
@@ -70,7 +70,7 @@ aganitha-papers/
 
 
 
-\## 📦 Installation
+&nbsp;Installation
 
 
 
@@ -90,7 +90,7 @@ bash
 
 poetry install
 
-💻 Usage
+Usage
 
 Run the CLI with a PubMed search query:
 
@@ -106,7 +106,7 @@ poetry run get-papers-list "cancer AND immunotherapy" -f results.csv
 
 | `-f FILE`     | Save results to specified CSV filename |
 
-🧠 Heuristics for Non-Academic Authors
+&nbsp;Heuristics for Non-Academic Authors
 
 To identify non-academic authors, we apply rules like:
 
@@ -122,15 +122,15 @@ Affiliations lacking academic keywords (e.g., not containing "university", "inst
 
 Presence of pharma/biotech keywords
 
-🧪 Example
+Example
 
 poetry run get-papers-list "diabetes treatment" -f diabetes.csv
 
-✅ Output:
+Output:
 
 Saved 8 papers to diabetes.csv
 
-📤 Publishing (Test PyPI)
+Publishing (Test PyPI)
 
 To publish to Test PyPI:
 
@@ -138,7 +138,7 @@ poetry config repositories.testpypi https://test.pypi.org/legacy/
 
 poetry publish --build --repository testpypi
 
-🧰 Tools \& Libraries Used
+Tools \& Libraries Used
 
 requests – HTTP requests to PubMed API
 
@@ -154,7 +154,7 @@ lxml – Parsing XML from PubMed
 
 Poetry – Packaging and dependency management
 
-✅ Evaluation Criteria Checklist
+&nbsp;Evaluation Criteria Checklist
 
 &nbsp;Modular code structure (fetch.py, cli.py)
 
