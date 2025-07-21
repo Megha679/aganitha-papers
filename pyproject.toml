@@ -1,0 +1,25 @@
+[project]
+name = "aganitha-papers"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Megha679",email = "149467993+Megha679@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "requests (>=2.32.4,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "aganitha_papers", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+get-papers-list = "aganitha_papers.cli:main"
+
+
